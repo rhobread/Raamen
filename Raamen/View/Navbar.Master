@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="Raamen.View.Navbar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               <%-- <asp:PlaceHolder ID="PlaceHolderMember" runat="server" Visible="False" >
+                    <asp:LinkButton ID="lbHome" runat="server" OnClick="lbHome_Click" >Home</asp:LinkButton>
+                    <asp:LinkButton ID="lbOrderRamen" runat="server" OnClick="lbOrderRamen_Click" >Order Ramen</asp:LinkButton>
+                    <asp:LinkButton ID="lbHistory" runat="server" OnClick="lbHistory_Click" >History</asp:LinkButton>
+                    <asp:LinkButton ID="lbProfile" runat="server" OnClick="lbProfile_Click" >Profile</asp:LinkButton>
+                    <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogout_Click" >Logout</asp:LinkButton>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="PlaceHolderStaff" runat="server" Visible="False">
+                    <asp:LinkButton ID="lbHome" runat="server" OnClick="lbHome_Click" >Home</asp:LinkButton>
+                    <asp:LinkButton ID="lbManageRamen" runat="server" OnClick="lbManageRamen_Click" >Manage Ramen</asp:LinkButton>
+                    <asp:LinkButton ID="lbOrderQueue" runat="server" OnClick="lbOrderQueue_Click" >Order Queue</asp:LinkButton>
+                    <asp:LinkButton ID="lbProfile" runat="server" OnClick="lbProfile_Click" >Profile</asp:LinkButton>
+                    <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogout_Click" >Logout</asp:LinkButton>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="PlaceHolderAdmin" runat="server" Visible="False">
+                    <asp:LinkButton ID="lbHome" runat="server" OnClick="lbHome_Click" >Home</asp:LinkButton>
+                    <asp:LinkButton ID="lbManageRamen" runat="server" OnClick="lbManageRamen_Click" >Manage Ramen</asp:LinkButton>
+                    <asp:LinkButton ID="lbOrderQueue" runat="server" OnClick="lbOrderQueue_Click" >Order Queue</asp:LinkButton>
+                    <asp:LinkButton ID="lbHistory" runat="server" OnClick="lbHistory_Click" >History</asp:LinkButton>
+                    <asp:LinkButton ID="lbReport" runat="server" OnClick="lbReport_Click" >Report</asp:LinkButton>
+                    <asp:LinkButton ID="lbProfile" runat="server" OnClick="lbProfile_Click" >Profile</asp:LinkButton>
+                    <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogout_Click" >Logout</asp:LinkButton>
+                </asp:PlaceHolder>--%>
+
+                <%-- semua --%>
+                <asp:LinkButton ID="lbHome" runat="server" OnClick="lbHome_Click" >Home</asp:LinkButton>
+
+                <%-- member only --%>
+                <asp:LinkButton ID="lbOrderRamen" runat="server" OnClick="lbOrderRamen_Click" >Order Ramen</asp:LinkButton>
+                
+                <%-- staff admin --%>
+                <asp:LinkButton ID="lbManageRamen" runat="server" OnClick="lbManageRamen_Click" >Manage Ramen</asp:LinkButton>
+                <asp:LinkButton ID="lbOrderQueue" runat="server" OnClick="lbOrderQueue_Click" >Order Queue</asp:LinkButton>
+
+                <%-- member admin --%>
+                <asp:LinkButton ID="lbHistory" runat="server" OnClick="lbHistory_Click" >History</asp:LinkButton>
+                
+                <%-- admin only --%>
+                <asp:LinkButton ID="lbReport" runat="server" OnClick="lbReport_Click" >Report</asp:LinkButton>
+
+                <%-- semua --%>
+                <asp:LinkButton ID="lbProfile" runat="server" OnClick="lbProfile_Click" >Profile</asp:LinkButton>
+                <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogout_Click" >Logout</asp:LinkButton>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
